@@ -64,7 +64,7 @@
         <section class="hero">
             <div class="conteiner">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="hero-button" type="button">Заказать услугу</button>
+                <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -132,18 +132,27 @@
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="examples-list list">
                     <li class="examples-list-item">
-                        <img class="examples-img" src="./images/box_1.jpg" alt="Структурный набор кода" width="370"
-                            height="294">
+                        <div class="example-thumb">
+                            <img class="examples-img" src="./images/box_1.jpg" alt="Структурный набор кода" width="370"
+                                height="294">
+                            <h3 class="item-name">Десктопные приложения</h3>
+                        </div>
                     </li>
 
                     <li class="examples-list-item">
-                        <img class="examples-img" src="./images/box_2.jpg" alt="Создания панели меню на смартфоне"
-                            width="370" height="294">
+                        <div class="example-thumb">
+                            <img class="examples-img" src="./images/box_2.jpg" alt="Создания панели меню на смартфоне"
+                                width="370" height="294">
+                            <h3 class="item-name">Мобильные приложения</h3>
+                        </div>
                     </li>
 
                     <li class="examples-list-item">
-                        <img class="examples-img" src="./images/box_3.jpg" alt="Выбор цвета фона на планшете"
-                            width="370" height="294">
+                        <div class="example-thumb">
+                            <img class="examples-img" src="./images/box_3.jpg" alt="Выбор цвета фона на планшете"
+                                width="370" height="294">
+                            <h3 class="item-name">Дизайнерские решения</h3>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -418,6 +427,17 @@
         </div>
 
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal-window">
+            <button type="button" class="close-button" data-modal-close>
+                <svg width="11" height="11" class="modal-close-icon">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+
+        </div>
+    </div>
     <script src="./JS/modal.js"></script>
 </body>
 
